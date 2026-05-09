@@ -10,7 +10,7 @@
 O script de avaliação foi configurado para gerar experiments no LangSmith, usando o "experiment_prefix" no evaluate() para organizar os resultados por prompt avaliado.
 
 
-## Técnicas aplicadas
+## Técnicas Aplicadas (Fase 2)
 
 ### 1. Role prompting
 O que é: Role prompting é uma técnica onde o modelo é instruído a assumir um papel específico para fornecer respostas mais relevantes e contextuais. Por exemplo, pedir ao modelo para agir como um especialista em um determinado assunto pode melhorar a qualidade das respostas.
@@ -46,7 +46,7 @@ Como apliquei: Defini três esqueletos de resposta, um por nível de complexidad
 Cada esqueleto foi acompanhado de um ou mais exemplos concretos (few-shot) para que o modelo internalize tanto a estrutura quanto o nível de detalhe esperado para cada complexidade.
 
 
-## Output
+## Resultados Finais
 
 Mais detalhes no [output.md](output.md) | [Link para o experimento no LangSmith](https://smith.langchain.com/o/d7e45f27-2f0f-4d97-900a-27bb81492af9/datasets/ae942558-c4ae-46f1-860f-dc698a9f37d2)
 
@@ -63,6 +63,15 @@ Prompt avaliado: `bug_to_user_story_v2` | Modelo: `gemini-2.5-flash` | Dataset: 
 | [0fba3539](https://smith.langchain.com/o/d7e45f27-2f0f-4d97-900a-27bb81492af9/datasets/ae942558-c4ae-46f1-860f-dc698a9f37d2/compare?selectedSessions=6a8bf551-a9ef-4f58-98a0-230a970b406a) | 0.97 ✓ | 0.93 ✓ | 0.90 ✓ | 0.97 ✓ | 0.97 ✓ | **0.9467** | ✅ APROVADO |
 | [eb020ba6](https://smith.langchain.com/o/d7e45f27-2f0f-4d97-900a-27bb81492af9/datasets/ae942558-c4ae-46f1-860f-dc698a9f37d2/compare?selectedSessions=9bda0d04-d07c-4445-9ae8-eadfb7297b3c) | 0.97 ✓ | 0.94 ✓ | 0.94 ✓ | 0.98 ✓ | 0.96 ✓ | **0.9586** | ✅ APROVADO |
 | [78bb07d9](https://smith.langchain.com/o/d7e45f27-2f0f-4d97-900a-27bb81492af9/datasets/ae942558-c4ae-46f1-860f-dc698a9f37d2/compare?selectedSessions=6d1c4997-634f-4bf6-8ccd-6be629629a30) | 0.96 ✓ | 0.91 ✓ | 0.88 ✗ | 0.96 ✓ | 0.95 ✓ | **0.9316** | ✅ APROVADO |
+| [e6c541d8](https://smith.langchain.com/o/d7e45f27-2f0f-4d97-900a-27bb81492af9/datasets/ae942558-c4ae-46f1-860f-dc698a9f37d2/compare?selectedSessions=f7d93aea-8e18-4965-a4d6-d6e0dddaefd9) | 0.97 ✓ | 0.94 ✓ | 0.92 ✓ | 0.97 ✓ | 0.97 ✓ | **0.9558** | ✅ APROVADO |
+
+### Prints
+
+![output_1](output_1.png)
+
+![output_2](output_2.png)
+
+![output_3](output_3.png)
 
 ### Melhorias feitas no prompt
 
